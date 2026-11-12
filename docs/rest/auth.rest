@@ -4,5 +4,20 @@ Content-Type: application/json
 {
     "name": "prueba",
     "email": "rjm@hm.com",
-    "pasword": "123456"
+    "password": "123456"
 }
+
+### login sin coneccion a DBB
+
+POST http://127.0.0.1:3000/auth/login
+Content-Type: application/json
+
+{
+    "name": "prueb3",
+    "email": "rp2@hm.com",
+    "password": "12345678"  
+}
+
+### users
+GET http://127.0.0.1:3000/users
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFkbWluQGdtYWlsLmNvbSIsImlkIjoxLCJpYXQiOjE3OTQ0OTI5MjgsImV4cCI6MTc5NDQ5Mjk4OH0.9u4Gy0RzzRsRKDLA88WKRJfhES8nXqgGigw7X6VcPok
