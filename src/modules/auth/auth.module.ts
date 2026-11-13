@@ -8,7 +8,7 @@ import { JwtStrategy } from './jwt.strategy.js';
   imports:[
     JwtModule.register({
       secret:"MI_CODIGO_SECRETO",
-      signOptions:{expiresIn:'60S'}
+      signOptions:{expiresIn:'60M'}
     })
   ],
   controllers: [AuthController],
