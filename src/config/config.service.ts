@@ -8,6 +8,9 @@ export class ConfigService {
     private readonly envConfig: { [key: string]: string };
 
     constructor() {
+        const env = process.env.NODE_ENV || 'development';
+        const envFilePath = join(process.cwd(), `.env.${env}`);
+        console.log("********",envFilePath);
         const isDevelopmentEnv = process.env.NODE_ENV !== 'production';
         if (isDevelopmentEnv) {
             const envFilePath = join(process.cwd(), '.env.development');
