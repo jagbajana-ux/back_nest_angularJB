@@ -8,6 +8,10 @@ import { DatabaseModule } from './database/database.module.js';
 import { ConfigModule } from './config/config.module.js';
 import { CategoriaModule } from './modules/categoria/categoria.module.js';
 import { PersonaModule } from './modules/persona/persona.module.js';
+import { ProductoModule } from './modules/producto/producto.module.js';
+import { RoleModule } from './modules/role/role.module.js';
+import { ClienteModule } from './modules/cliente/cliente.module.js';
+import { PedidoModule } from './modules/pedido/pedido.module.js';
 
 export const { ObserveModule, ObserveInstrument } = createObserveModule();
 
@@ -27,6 +31,10 @@ export const { ObserveModule, ObserveInstrument } = createObserveModule();
     ConfigModule,
     CategoriaModule,
     PersonaModule,
+    ProductoModule,
+    RoleModule,
+    ClienteModule,
+    PedidoModule,
   ],
   controllers: [AppController],
   providers: [AppService],
